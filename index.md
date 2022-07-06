@@ -20,7 +20,7 @@ See <a href="{{ item.url | relative_url }}/scenarios">all scenarios</a> for the 
 <p><span style="font-size:medium;">Humans rated how well they could understand the social interactions produced by Linear Social MDPs. Chance is 20%, overall, they were able to recognize every social interaction, with "exchange" being the most difficult. Linear Social MDPs could recognize the resulting movies as well, while the inverse planning-based model and the LSTM had difficulty doing so.</span></p>
 
 ### Paper
-The paper is currently under review at the *39th IEEE Conference on Robotics and Automation (ICRA 2022)*. Refer to the <a href="{{ item.url | relative_url }}/paper">latest version of the paper</a>. 
+The paper is currently under review at the *Conference on Robot Learning (CoRL 2022)*. Refer to the <a href="{{ item.url | relative_url }}/paper">latest version of the paper</a>. 
 
 ### Code
 Refer to the [Linear Social MDP repository](https://github.com/Linear-Social-MDP/) for the codebase.
