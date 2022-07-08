@@ -62,7 +62,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
             </center>
         </td>
     </tr>
-    
+
     <td style="width:50%; text-align:center" id="level-2">
             <h6 style="text-align:center">Level 2</h6>
         </td>
