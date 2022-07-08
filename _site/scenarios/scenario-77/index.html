@@ -10,17 +10,17 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Scenario 77 – Linear Social MDP</title>
+	<title>Experimental Scenario 77 – Linear Social MDP</title>
 	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Scenario 77 – Linear Social MDP">
+	<meta name="twitter:title" content="Experimental Scenario 77 – Linear Social MDP">
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image:src" content="">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Scenario 77 – Linear Social MDP" />
+	<meta property="og:title" content="Experimental Scenario 77 – Linear Social MDP" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 
@@ -113,14 +113,14 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Scenario 77 – Linear Social MDP">
+		<div class="page__content" data-page-title="Experimental Scenario 77 – Linear Social MDP">
 
 			<section class="intro">
 
 	<div class="wrap">
 
-		<h1>Scenario 77</h1>
-		<p>In this scenario, the physical goals of Yellow robot are going to Tree and Axe and the social goals of Yellow robot are competing for the tree. The physical goals of Red robot are going to Fire and Tree and the social goals of Red robot are exchanging the wood on fire and water on fire.</p>
+		<h1>Experimental Scenario 77</h1>
+		<p></p>
 
 	</div>
 
@@ -128,63 +128,98 @@
 
 <section class="single">
 
-	## Interactions
+	<p>Red and Yellow robot are initialized with the following goals. Using Linear Social MDP model, at different levels of reasoning, each robot recursively estimates the goals of another by observing their actions.</p>
+
+<table style="text-align:center">
+<thead>
+<tr>
+    <th colspan="4" style="text-align:center; background: orange">Yellow Robot</th>
+    <th colspan="4" style="text-align:center; background: red">Red Robot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td><b>Social Goal 1</b></td>
+    <td><b>Social Goal 2</b></td>
+    <td><b>Physical Goal 1</b></td>
+    <td><b>Physical Goal 2</b></td>
+    <td><b>Social Goal 1</b></td>
+    <td><b>Social Goal 2</b></td>
+    <td><b>Physical Goal 1</b></td>
+    <td><b>Physical Goal 2</b></td>
+</tr>
+
+<tr>
+    <td>Compete on Tree</td>
+    <td>None</td>
+    <td>Tree</td>
+    <td>Saw</td>
+    <td>Cooperate on Tree</td>
+    <td>Exchange on Saw</td>
+    <td>Tree</td>
+    <td>Fire</td>
+</tr>
+</tbody></table>
+
+<hr />
+<h2 id="interactions">Interactions</h2>
 
 <table cellpadding="1">
     <tr>
         <td style="width:50%; text-align:center" id="level-0">
-            <b>Level 0</b>
+            <h6 style="text-align:center">Level 0</h6>
         </td>
         <td style="width:50%; text-align:center" id="level-1">
-            <b>Level 1</b>
+            <h6 style="text-align:center">Level 1</h6>
         </td>
     </tr>
     
     <tr>
         <td>
             <center>
-                <img src="/images/experiment-scenarios/e77-level0.gif">
+                <video width="400" height="400" controls=""><source src="/scenario-videos/scenario-77-level0.mp4" type="video/mp4" /></video>
             </center>
         </td>
         <td>
             <center>
-                <img src="/images/experiment-scenarios/e77-level1.gif">
+                <video width="400" height="400" controls=""><source src="/scenario-videos/scenario-77-level1.mp4" type="video/mp4" /></video>
             </center>
         </td>
     </tr>
     
-    <tr>
-        <td style="width:50%; text-align:center" id="level-2">
-            <b>Level 2</b>
+    <td style="width:50%; text-align:center" id="level-0">
+            <h6 style="text-align:center">Level 2</h6>
         </td>
-        <td style="width:50%; text-align:center" id="level-3">
-            <b>Level 3</b>
+        <td style="width:50%; text-align:center" id="level-1">
+            <h6 style="text-align:center">Level 3</h6>
         </td>
-    </tr>
     
     <tr>
         <td>
             <center>
-                <img src="/images/experiment-scenarios/e77-level2.gif">
+                <video width="400" height="400" controls=""><source src="/scenario-videos/scenario-77-level2.mp4" type="video/mp4" /></video>
             </center>
         </td>
         <td>
             <center>
-                <img src="/images/experiment-scenarios/e77-level3.gif">
+                <video width="400" height="400" controls=""><source src="/scenario-videos/scenario-77-level3.mp4" type="video/mp4" /></video>
             </center>
         </td>
     </tr>
 </table>
 
----
+<hr />
 
-## Results
-
+<h2 id="results">Results</h2>
+<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px" /></span> (Level 3) : <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px" /></span> (Level 2) 
+<span><img style="float:right" src="/images/sg-legend.png" width="120px" height="120px" /></span>
+</p>
+<p><br />
+.</p>
 
 <table cellpadding="1">
-    Yellow (Level 2)<br>Red (Level 1)
     <tr>
-        <td style="width:20%; text-align:center; font-weight: bold; font-size: large;">Model</td>
+        <td style="width:20%; text-align:center; font-weight: bold; font-size: large;"></td>
         <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
            Tree
         </td>
@@ -199,25 +234,70 @@
     <tr>
         <td style="text-align:center; font-size: large;">Human</td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-tree.jpg"> 
+            <img src="/images/results/linear-social-mdp-results/human-l3-yellow-tree.jpg" /> 
         </td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-fire.jpg">  
+            <img src="/images/results/linear-social-mdp-results/human-l3-yellow-fire.jpg" />  
         </td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-saw.jpg">  
+            <img src="/images/results/linear-social-mdp-results/human-l3-yellow-saw.jpg" />  
         </td>
     </tr>
     <tr>
         <td style="text-align:center; font-size: large;">Linear Social MDP</td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-tree.jpg"> 
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l3-yellow-tree.jpg" /> 
         </td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-fire.jpg">  
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l3-yellow-fire.jpg" />  
         </td>
         <td>
-            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-saw.jpg">  
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l3-yellow-saw.jpg" />  
+        </td>
+    </tr>
+</table>
+
+<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px" /></span> (Level 2) : <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px" /></span> (Level 1) 
+<span><img style="float:right" src="/images/sg-legend.png" width="120px" height="120px" /></span>
+</p>
+<p><br />
+.</p>
+<table cellpadding="1">
+    <tr>
+        <td style="width:20%; text-align:center; font-weight: bold; font-size: large;"></td>
+        <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
+           Tree
+        </td>
+        <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
+            Fire
+        </td>
+        <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
+            Saw
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="text-align:center; font-size: large;">Human</td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-tree.jpg" /> 
+        </td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-fire.jpg" />  
+        </td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/human-l2-yellow-saw.jpg" />  
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-size: large;">Linear Social MDP</td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-tree.jpg" /> 
+        </td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-fire.jpg" />  
+        </td>
+        <td>
+            <img src="/images/results/linear-social-mdp-results/smdp-combined-l2-yellow-saw.jpg" />  
         </td>
     </tr>
 </table>
