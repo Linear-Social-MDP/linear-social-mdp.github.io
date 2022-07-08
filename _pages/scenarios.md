@@ -8,8 +8,8 @@ subtitle: 'We apply the Linear Social MDP in a 10x10 grid-world environment, for
 <thead>
 <tr>
     <th style="text-align:center">Scenario #</th>
-    <th colspan="4" style="text-align:center">Yellow Robot</th>
-    <th colspan="4" style="text-align:center">Red Robot</th>
+    <th colspan="4" style="text-align:center; background: orange">Yellow Robot</th>
+    <th colspan="4" style="text-align:center; background: red">Red Robot</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -26,12 +26,12 @@ subtitle: 'We apply the Linear Social MDP in a 10x10 grid-world environment, for
 
 <tr>
     <td><A href="/scenarios/scenario-77">Scenario 77</A></td>
-    <td>Competition</td>
+    <td>Compete on Tree</td>
     <td>None</td>
     <td>Tree</td>
     <td>Saw</td>
-    <td>Cooperate</td>
-    <td>Exchange</td>
+    <td>Cooperate on Tree</td>
+    <td>Exchange on Saw</td>
     <td>Tree</td>
     <td>Fire</td>
 </tr>

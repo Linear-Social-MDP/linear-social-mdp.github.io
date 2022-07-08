@@ -87,7 +87,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 ---
 
 ## Results  
-<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 3) : <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 2) 
+<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 3) estimating <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 2) 
 <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
@@ -134,7 +134,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 </table>
 
 
-<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 2) : <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 1) 
+<p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 2) estimating <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 1) 
 <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
