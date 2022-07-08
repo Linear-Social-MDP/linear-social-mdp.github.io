@@ -120,7 +120,7 @@
 	<div class="wrap">
 
 		<h1>Linear Social MDP</h1>
-		<p>How an robot responds socially, should depend on what it thinks the other robot is doing at that point in time. To encode this notion, we take linear combinations of social interactions as defined in Social MDPs, and compute the weights on those combinations on the fly depending on the goals of other robots. This new model, the Linear Social MDP, enables zero-shot reasoning about complex social interactions, provides a mathematical basis for the long-standing intuition that social interactions should compose, and leads to interesting new behaviors that we validate using human observers. Complex social interactions are part of the future of robotics, and having principled mathematical models built on a foundation like MDPs will make it possible to bring social interactions to every robotic application.</p>
+		<p>How a robot responds socially, should depend on what it thinks the other robot is doing at that point in time. To encode this notion, we take linear combinations of social interactions as defined in Social MDPs, and compute the weights on those combinations on the fly depending on the goals of other robots. This new model, the Linear Social MDP, enables zero-shot reasoning about complex social interactions, provides a mathematical basis for the long-standing intuition that social interactions should compose, and leads to interesting new behaviors that we validate using human observers. Complex social interactions are part of the future of robotics, and having principled mathematical models built on a foundation like MDPs will make it possible to bring social interactions to every robotic application.</p>
 
 	</div>
 
@@ -140,7 +140,144 @@
 <p>See <a href="/scenarios">all scenarios</a> for the list of all experimental scenarios.</p>
 
 <h2 id="results">Results</h2>
-<p><img src="" width="900" /></p>
+
+<h4 id="overall">Overall</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Social Interaction</th>
+      <th style="text-align: center">Human</th>
+      <th style="text-align: center">Linear Social MDP</th>
+      <th style="text-align: center">Inverse Planning</th>
+      <th style="text-align: center">LSTM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Cooperation</td>
+      <td style="text-align: center">0.798</td>
+      <td style="text-align: center">0.761</td>
+      <td style="text-align: center">0.742</td>
+      <td style="text-align: center">0.521</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Conflict</td>
+      <td style="text-align: center">0.788</td>
+      <td style="text-align: center">0.712</td>
+      <td style="text-align: center">0.717</td>
+      <td style="text-align: center">0.459</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Competition</td>
+      <td style="text-align: center">0.683</td>
+      <td style="text-align: center">0.659</td>
+      <td style="text-align: center">0.431</td>
+      <td style="text-align: center">0.278</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Coercion</td>
+      <td style="text-align: center">0.808</td>
+      <td style="text-align: center">0.784</td>
+      <td style="text-align: center">0.323</td>
+      <td style="text-align: center">0.172</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Exchange</td>
+      <td style="text-align: center">0.669</td>
+      <td style="text-align: center">0.681</td>
+      <td style="text-align: center">0.446</td>
+      <td style="text-align: center">0.081</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="social-interactions-conditioned-over-physical-goals">Social Interactions conditioned over Physical goals</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Social Interaction</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Human</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Linear Social MDP</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Inverse Planning</th>
+      <th style="text-align: center">Cue Based Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"><strong>Physical Goal (Tree)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Fire)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Saw)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Tree)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Fire)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Saw)</strong></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Cooperate</td>
+      <td style="text-align: center">0.821</td>
+      <td style="text-align: center">0.783</td>
+      <td style="text-align: center">0.792</td>
+      <td style="text-align: center">0.772</td>
+      <td style="text-align: center">0.752</td>
+      <td style="text-align: center">0.761</td>
+      <td style="text-align: center">0.742</td>
+      <td style="text-align: center">0.521</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Conflict</td>
+      <td style="text-align: center">0.782</td>
+      <td style="text-align: center">0.813</td>
+      <td style="text-align: center">0.771</td>
+      <td style="text-align: center">0.713</td>
+      <td style="text-align: center">0.692</td>
+      <td style="text-align: center">0.622</td>
+      <td style="text-align: center">0.717</td>
+      <td style="text-align: center">0.459</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Competition</td>
+      <td style="text-align: center">0.681</td>
+      <td style="text-align: center">0.693</td>
+      <td style="text-align: center">0.675</td>
+      <td style="text-align: center">0.658</td>
+      <td style="text-align: center">0.722</td>
+      <td style="text-align: center">0.686</td>
+      <td style="text-align: center">0.431</td>
+      <td style="text-align: center">0.278</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Coercion</td>
+      <td style="text-align: center">0.827</td>
+      <td style="text-align: center">0.787</td>
+      <td style="text-align: center">0.812</td>
+      <td style="text-align: center">0.804</td>
+      <td style="text-align: center">0.755</td>
+      <td style="text-align: center">0.854</td>
+      <td style="text-align: center">0.323</td>
+      <td style="text-align: center">0.172</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Exchange</td>
+      <td style="text-align: center">0.671</td>
+      <td style="text-align: center">0.651</td>
+      <td style="text-align: center">0.686</td>
+      <td style="text-align: center">0.711</td>
+      <td style="text-align: center">0.632</td>
+      <td style="text-align: center">0.653</td>
+      <td style="text-align: center">0.446</td>
+      <td style="text-align: center">0.081</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><span style="font-size:medium;">Humans rated how well they could understand the social interactions produced by Linear Social MDPs. Chance is 20%, overall, they were able to recognize every social interaction, with "exchange" being the most difficult. Linear Social MDPs could recognize the resulting movies as well, while the inverse planning-based model and the LSTM had difficulty doing so.</span></p>
 
 <h3 id="paper">Paper</h3>
