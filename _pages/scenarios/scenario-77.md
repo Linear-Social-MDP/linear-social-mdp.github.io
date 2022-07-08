@@ -91,7 +91,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
-.
+&nbsp;
 
 <table cellpadding="1">
     <tr>
@@ -138,7 +138,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
-.
+&nbsp;
 <table cellpadding="1">
     <tr>
         <td style="width:20%; text-align:center; font-weight: bold; font-size: large;"></td>

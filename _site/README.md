@@ -1,3 +1,3 @@
-# social-interactions-mdp.github.io
+# linear-social-mdp.github.io
 
-Website for Social Interactions MDP.
+Website for Linear Social MDP.
