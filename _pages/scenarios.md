@@ -36,7 +36,7 @@ subtitle: 'We apply the Linear Social MDP in a 10x10 grid-world environment, for
     <td>Tree</td>
 </tr>
 <tr>
-    <td>Scenario 2</td>
+    <td><A href="/scenarios/scenario-2">Scenario 2</A></td>
     <td>Cooperate on Fire</td>
     <td>None</td>
     <td>Tree</td>
@@ -47,7 +47,7 @@ subtitle: 'We apply the Linear Social MDP in a 10x10 grid-world environment, for
     <td>Tree</td>
 </tr>
 <tr>
-    <td>Scenario 3</td>
+    <td><A href="/scenarios/scenario-3">Scenario 3</A></td>
     <td>Cooperate on Fire</td>
     <td>None</td>
     <td>Tree</td>
@@ -58,7 +58,7 @@ subtitle: 'We apply the Linear Social MDP in a 10x10 grid-world environment, for
     <td>Tree</td>
 </tr>
 <tr>
-    <td>Scenario 4</td>
+     <td><A href="/scenarios/scenario-4">Scenario 4</A></td>
     <td>Cooperate on Fire</td>
     <td>None</td>
     <td>Tree</td>
