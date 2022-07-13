@@ -13,7 +13,7 @@ In all experiments each robot always attempts to achieve two physical goals whil
 
 We explored every social scenario in this environment. The Yellow robot always had at most one social interaction, while the Red robot always had at most two social interactions. This resulted in 6x6x5 = 180 scenarios (eliminating the cause where neither agent considers any social interaction). 
  
-See <a href="{{ item.url | relative_url }}/scenarios">all scenarios</a> for the list of all experimental scenarios.
+See list of <a href="{{ item.url | relative_url }}/scenarios">all scenarios</a>.
 
 ## Results
 
@@ -32,11 +32,11 @@ See <a href="{{ item.url | relative_url }}/scenarios">all scenarios</a> for the 
 | Social Interaction || Human ||| Linear Social MDP || Inverse Planning | Cue Based Model |
 |:------------------:|:-----:|:-----:|:-----:|:----------:|:-----:|:-----:|:----------------:|:---------------:|
 |                    |  **Physical Goal (Tree)** |  **Physical Goal (Fire)** |  **Physical Goal (Saw)**  |    **Physical Goal (Tree)**    |  **Physical Goal (Fire)** |  **Physical Goal (Saw)**  |                  |                 |
-|      Cooperate     | 0.821 | 0.783 | 0.792 |    0.772   | 0.752 | 0.761 |       0.742      |      0.521      |
-|      Conflict      | 0.782 | 0.813 | 0.771 |    0.713   | 0.692 | 0.622 |       0.717      |      0.459      |
-|     Competition    | 0.681 | 0.693 | 0.675 |    0.658   | 0.722 | 0.686 |       0.431      |      0.278      |
-|      Coercion      | 0.827 | 0.787 | 0.812 |    0.804   | 0.755 | 0.854 |       0.323      |      0.172      |
-|      Exchange      | 0.671 | 0.651 | 0.686 |    0.711   | 0.632 | 0.653 |       0.446      |      0.081      |
+|      Cooperate     | 0.821 | 0.783 | 0.792 |    0.772   | 0.752 | 0.759 |       0.742      |      0.521      |
+|      Conflict      | 0.782 | 0.813 | 0.771 |    0.713   | 0.692 | 0.731 |       0.717      |      0.459      |
+|     Competition    | 0.681 | 0.693 | 0.675 |    0.658   | 0.722 | 0.597 |       0.431      |      0.278      |
+|      Coercion      | 0.827 | 0.787 | 0.812 |    0.804   | 0.755 | 0.793 |       0.323      |      0.172      |
+|      Exchange      | 0.671 | 0.651 | 0.686 |    0.711   | 0.632 | 0.700 |       0.446      |      0.081      |
 
 
 <p><span style="font-size:medium;">Humans rated how well they could understand the social interactions produced by Linear Social MDPs. Chance is 20%, overall, they were able to recognize every social interaction, with "exchange" being the most difficult. Linear Social MDPs could recognize the resulting movies as well, while the inverse planning-based model and the LSTM had difficulty doing so.</span></p>
@@ -46,4 +46,4 @@ See <a href="{{ item.url | relative_url }}/scenarios">all scenarios</a> for the 
 The paper is currently under review at the *Conference on Robot Learning (CoRL 2022)*. Refer to the <a href="{{ item.url | relative_url }}/paper">latest version of the paper</a>. 
 
 ### Code
-Refer to the [Linear Social MDP repository](https://github.com/Linear-Social-MDP/) for the codebase.
+Refer to the [Linear Social MDP framework repository](https://github.com/Linear-Social-MDP/linear-social-mdp-framework) for the codebase.

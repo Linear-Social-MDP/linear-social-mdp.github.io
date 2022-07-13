@@ -1,28 +1,28 @@
 ---
 permalink: /scenarios/scenario-77/
-title: Experimental Scenario 77
+title: Scenario 77
 subtitle: ''    
 ---
 Red and Yellow robot are initialized with the following goals. Using Linear Social MDP model, at different levels of reasoning, each robot recursively estimates the goals of another by observing their actions.
 
 <table style="text-align:center">
-<thead>
-<tr>
-    <th colspan="4" style="text-align:center; background: orange">Yellow Robot</th>
-    <th colspan="4" style="text-align:center; background: red">Red Robot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td><b>Social Goal 1</b></td>
-    <td><b>Social Goal 2</b></td>
-    <td><b>Physical Goal 1</b></td>
-    <td><b>Physical Goal 2</b></td>
-    <td><b>Social Goal 1</b></td>
-    <td><b>Social Goal 2</b></td>
-    <td><b>Physical Goal 1</b></td>
-    <td><b>Physical Goal 2</b></td>
-</tr>
+    <thead>
+        <tr>
+            <th colspan="4" style="text-align:center; background: orange">Yellow Robot</th>
+            <th colspan="4" style="text-align:center; background: red">Red Robot</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Social Goal 1</b></td>
+            <td><b>Social Goal 2</b></td>
+            <td><b>Physical Goal 1</b></td>
+            <td><b>Physical Goal 2</b></td>
+            <td><b>Social Goal 1</b></td>
+            <td><b>Social Goal 2</b></td>
+            <td><b>Physical Goal 1</b></td>
+            <td><b>Physical Goal 2</b></td>
+        </tr>
 
 <tr>
     <td>Compete on Tree</td>
@@ -49,16 +49,16 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
             <h6 style="text-align:center">Level 1</h6>
         </td>
     </tr>
-    
+
     <tr>
         <td>
             <center>
-                <video width="400" height="400" controls><source src="/scenario-videos/scenario-77-level0.mp4" type="video/mp4"></video>
+                <video width="400" height="400" controls><source src="/scenario-videos/E77-level0.mp4" type="video/mp4"></video>
             </center>
         </td>
         <td>
             <center>
-                <video width="400" height="400" controls><source src="/scenario-videos/scenario-77-level1.mp4" type="video/mp4"></video>
+                <video width="400" height="400" controls><source src="/scenario-videos/E77-level1.mp4" type="video/mp4"></video>
             </center>
         </td>
     </tr>
@@ -69,16 +69,16 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
         <td style="width:50%; text-align:center" id="level-3">
             <h6 style="text-align:center">Level 3</h6>
         </td>
-    
+
     <tr>
         <td>
             <center>
-                <video width="400" height="400" controls><source src="/scenario-videos/scenario-77-level2.mp4" type="video/mp4"></video>
+                <video width="400" height="400" controls><source src="/scenario-videos/E77-level2.mp4" type="video/mp4"></video>
             </center>
         </td>
         <td>
             <center>
-                <video width="400" height="400" controls><source src="/scenario-videos/scenario-77-level3.mp4" type="video/mp4"></video>
+                <video width="400" height="400" controls><source src="/scenario-videos/E77-level3.mp4" type="video/mp4"></video>
             </center>
         </td>
     </tr>
@@ -88,7 +88,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 
 ## Results  
 <p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 3) estimating <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 2) 
-<span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
+    <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
 &nbsp;
@@ -97,7 +97,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
     <tr>
         <td style="width:20%; text-align:center; font-weight: bold; font-size: large;"></td>
         <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
-           Tree
+            Tree
         </td>
         <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
             Fire
@@ -106,7 +106,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
             Saw
         </td>
     </tr>
-    
+
     <tr>
         <td style="text-align:center; font-size: large;">Human</td>
         <td>
@@ -135,7 +135,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
 
 
 <p><span><img style="display: inline-block" src="/images/yellow-robot.png" width="25px" height="25px"/></span> (Level 2) estimating <span><img style="display: inline-block" src="/images/red-robot.png" width="25px" height="25px"/></span> (Level 1) 
-<span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
+    <span><img style="display: inline-block" src="/images/sg-legend.png" style="float:right" width="120px" height="120px"/></span>
 </p>
 <br>
 &nbsp;
@@ -143,7 +143,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
     <tr>
         <td style="width:20%; text-align:center; font-weight: bold; font-size: large;"></td>
         <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
-           Tree
+            Tree
         </td>
         <td style="width:25%; text-align:center; font-weight: bold; font-size: large;">
             Fire
@@ -152,7 +152,7 @@ Red and Yellow robot are initialized with the following goals. Using Linear Soci
             Saw
         </td>
     </tr>
-    
+
     <tr>
         <td style="text-align:center; font-size: large;">Human</td>
         <td>
