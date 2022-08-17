@@ -1,0 +1,323 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<title>Linear Social MDP – Linear Social MDP</title>
+	<meta name="description" content="">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Linear Social MDP – Linear Social MDP">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image:src" content="">
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:title" content="Linear Social MDP – Linear Social MDP" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<style></style>
+	
+
+	
+	<!-- Analytics Code -->
+	
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/">
+
+
+	<header class="header">
+
+	<div class="wrap">
+
+		
+		<a href="/" class="header__title">
+			Linear Social MDP
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/" class="menu__list__item__link">Overview</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/scenarios" class="menu__list__item__link">Scenarios</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/paper" class="menu__list__item__link">Paper</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/team" class="menu__list__item__link">Team</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/contact" class="menu__list__item__link">Contact</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Linear Social MDP – Linear Social MDP">
+
+			<section class="intro">
+
+	<div class="wrap">
+
+		<h1>Linear Social MDP</h1>
+		<p>How a robot responds socially, should depend on what it thinks the other robot is doing at that point in time. To encode this notion, we take linear combinations of social interactions as defined in Social MDPs, and compute the weights on those combinations on the fly depending on the goals of other robots. This new model, the Linear Social MDP, enables zero-shot reasoning about complex social interactions, provides a mathematical basis for the long-standing intuition that social interactions should compose, and leads to interesting new behaviors that we validate using human observers. Complex social interactions are part of the future of robotics, and having principled mathematical models built on a foundation like MDPs will make it possible to bring social interactions to every robotic application.</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<p><img src="/images/index/levels_of_reasoning.png" style="width:70%;" /></p>
+
+<h2 id="scenarios">Scenarios</h2>
+<p>We use a two-agent (a yellow and red robot) 10x10 grid-world environment, with five actions (move in one of four directions or stay in place), three physical goals (watering the tree, adding logs to a fire and sawing logs), three locations (tree, fire, and saw), and two objects (a log, and a water can). In addition to the three physical goals, any combination of physical goals is possible, along with one of five social goals (cooperation, conflict, competition, coercion, or exchange) each related to one or more physical goals. Robots can move objects by pushing them.</p>
+
+<p>In all experiments each robot always attempts to achieve two physical goals while engaging in social interactions relative to those goals. Those social interactions are conditioned on the physical goals of the other agent; or rather, on what the first agent thinks the second agent is doing. Despite having a fully-observable environment, agents do not have access to each other’s internal states and must estimate each other’s goals.</p>
+
+<p>We explored every social scenario in this environment. The Yellow robot always had at most one social interaction, while the Red robot always had at most two social interactions. This resulted in 6x6x5 = 180 scenarios (eliminating the cause where neither agent considers any social interaction).</p>
+
+<p>See list of <a href="/scenarios">all scenarios</a>.</p>
+
+<h2 id="results">Results</h2>
+
+<h4 id="overall">Overall</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Social Interaction</th>
+      <th style="text-align: center">Human</th>
+      <th style="text-align: center">Linear Social MDP</th>
+      <th style="text-align: center">Inverse Planning</th>
+      <th style="text-align: center">LSTM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Cooperation</td>
+      <td style="text-align: center">0.798</td>
+      <td style="text-align: center">0.761</td>
+      <td style="text-align: center">0.742</td>
+      <td style="text-align: center">0.521</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Conflict</td>
+      <td style="text-align: center">0.788</td>
+      <td style="text-align: center">0.712</td>
+      <td style="text-align: center">0.717</td>
+      <td style="text-align: center">0.459</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Competition</td>
+      <td style="text-align: center">0.683</td>
+      <td style="text-align: center">0.659</td>
+      <td style="text-align: center">0.431</td>
+      <td style="text-align: center">0.278</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Coercion</td>
+      <td style="text-align: center">0.808</td>
+      <td style="text-align: center">0.784</td>
+      <td style="text-align: center">0.323</td>
+      <td style="text-align: center">0.172</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Exchange</td>
+      <td style="text-align: center">0.669</td>
+      <td style="text-align: center">0.681</td>
+      <td style="text-align: center">0.446</td>
+      <td style="text-align: center">0.081</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="social-interactions-conditioned-over-physical-goals">Social Interactions conditioned over Physical goals</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Social Interaction</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Human</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Linear Social MDP</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Inverse Planning</th>
+      <th style="text-align: center">Cue Based Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"><strong>Physical Goal (Tree)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Fire)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Saw)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Tree)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Fire)</strong></td>
+      <td style="text-align: center"><strong>Physical Goal (Saw)</strong></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Cooperate</td>
+      <td style="text-align: center">0.821</td>
+      <td style="text-align: center">0.783</td>
+      <td style="text-align: center">0.792</td>
+      <td style="text-align: center">0.772</td>
+      <td style="text-align: center">0.752</td>
+      <td style="text-align: center">0.759</td>
+      <td style="text-align: center">0.742</td>
+      <td style="text-align: center">0.521</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Conflict</td>
+      <td style="text-align: center">0.782</td>
+      <td style="text-align: center">0.813</td>
+      <td style="text-align: center">0.771</td>
+      <td style="text-align: center">0.713</td>
+      <td style="text-align: center">0.692</td>
+      <td style="text-align: center">0.731</td>
+      <td style="text-align: center">0.717</td>
+      <td style="text-align: center">0.459</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Competition</td>
+      <td style="text-align: center">0.681</td>
+      <td style="text-align: center">0.693</td>
+      <td style="text-align: center">0.675</td>
+      <td style="text-align: center">0.658</td>
+      <td style="text-align: center">0.722</td>
+      <td style="text-align: center">0.597</td>
+      <td style="text-align: center">0.431</td>
+      <td style="text-align: center">0.278</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Coercion</td>
+      <td style="text-align: center">0.827</td>
+      <td style="text-align: center">0.787</td>
+      <td style="text-align: center">0.812</td>
+      <td style="text-align: center">0.804</td>
+      <td style="text-align: center">0.755</td>
+      <td style="text-align: center">0.793</td>
+      <td style="text-align: center">0.323</td>
+      <td style="text-align: center">0.172</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Exchange</td>
+      <td style="text-align: center">0.671</td>
+      <td style="text-align: center">0.651</td>
+      <td style="text-align: center">0.686</td>
+      <td style="text-align: center">0.711</td>
+      <td style="text-align: center">0.632</td>
+      <td style="text-align: center">0.700</td>
+      <td style="text-align: center">0.446</td>
+      <td style="text-align: center">0.081</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span style="font-size:medium;">Humans rated how well they could understand the social interactions produced by Linear Social MDPs. Chance is 20%, overall, they were able to recognize every social interaction, with "exchange" being the most difficult. Linear Social MDPs could recognize the resulting movies as well, while the inverse planning-based model and the LSTM had difficulty doing so.</span></p>
+
+<h3 id="paper">Paper</h3>
+<p>The paper is currently under review at the <em>Conference on Robot Learning (CoRL 2022)</em>. Refer to the <a href="/paper">latest version of the paper</a>.</p>
+
+<h3 id="code">Code</h3>
+<p>Refer to the <a href="https://github.com/Linear-Social-MDP/linear-social-mdp-framework">Linear Social MDP framework repository</a> for the codebase.</p>
+
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="footer__copyright">
+			<span>© 2022 Linear Social MDP</span>
+		</div>
+
+	</div>
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/plugins-min.js"></script>
+	<script src="/js/duet-min.js"></script>
+
+	
+	<!-- Extra Footer JS Code -->
+	
+	
+
+
+</body>
+
+</html>
